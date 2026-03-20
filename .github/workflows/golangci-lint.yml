@@ -16,7 +16,7 @@ jobs:
 
       - name: Read .go-version file
         id: goversion
-        run: echo "version=$(cat .go-version)" >> $GITHUB_OUTPUT
+        run: echo "version=$(cat .go-version)" >> "$GITHUB_OUTPUT"
 
       - uses: actions/setup-go@4b73464bb391d4059bd26b0524d20df3927bd417 # v6.3.0
         with:
